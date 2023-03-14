@@ -1,9 +1,15 @@
 const fs = require('fs')
 const path = require('path')
-
+//const companyName= 'Scuber';
+//let companyCeo= 'Susan Smith';
+//let mostProfitableNeighborhood='Chelsea';
 const js = fs.readFileSync(path.resolve(__dirname, '..', 'index.js'), 'utf-8')
 
 describe('index.js', function () {
+  // const companyName= 'Scuber';
+  // let companyCeo= 'Susan Smith';
+  // let mostProfitableNeighborhood='Chelsea';
+  // console.log(companyName);
   describe('companyName', function () {
     it('is set as Scuber', function () {
       expect(companyName).to.equal('Scuber');
